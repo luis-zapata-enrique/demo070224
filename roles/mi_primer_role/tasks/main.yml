@@ -6,6 +6,11 @@
   when:
     - role_action == "saludar"
 
+- name: Force un fail
+  fail:
+    msg: "esto ha fallado"
+  when:
+    - role_action == "fail"
 - name: Incluir tarea despedir
   include: despedir.yml
   when:
