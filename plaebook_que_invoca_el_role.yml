@@ -1,0 +1,10 @@
+---
+- name: incluir role saludar y despedir
+  hosts: localhost
+  roles:
+    - mi_primer_role
+
+
+
+    
+

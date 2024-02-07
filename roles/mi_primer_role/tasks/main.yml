@@ -1,0 +1,13 @@
+---
+# tasks file for mi_primer_role
+
+- name: Incluir tarea saludar
+  include: saludar.yml
+  when:
+    - role_action == "saludar"
+
+- name: Incluir tarea despedir
+  include: despedir.yml
+  when:
+    - role_action == "despedir"
+
